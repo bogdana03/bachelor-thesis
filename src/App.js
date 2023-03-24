@@ -48,12 +48,10 @@ function App() {
           <Route path="/projects" element={<Projects/>}/>
         </Routes>
       </div>
-      <Footer />
     </div>
-    <br/>
-    <br/>
-    <br/>
+      <Footer />
     </BrowserRouter>
+    
   
   );
 }
