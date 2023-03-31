@@ -1,0 +1,15 @@
+
+import React from 'react'
+
+export const Cards = () => {
+    return (
+    <div>
+       <h3>This is my Cards section</h3> 
+    </div>
+   ) 
+}
+
+
+
+
+

@@ -6,6 +6,24 @@
   color: blueviolet;
 }
 
+/*.nav {
+  background-color: black;
+  color: white !important;
+}*/
+
+.dev {
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.dev span {
+  color: rgb(17, 193, 184);
+}
+
+
+
 .Footer {
   background-color: black;
   color: aliceblue;
@@ -72,6 +90,18 @@
 
 .ft-3 i {
  padding-right: 0.5rem;
+}
+
+.Last-Footer {
+  background: rgb(17, 193, 184);
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.Last-Footer p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 

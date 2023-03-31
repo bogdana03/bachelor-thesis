@@ -5,7 +5,7 @@ export const Footer = () => {
         <>
         {/* */}
     <div className="Footer">
-        <div className="container">
+        <div className="container text-center">
             <div className="row">
              <div className="col-md-5 ft-1">
                 <h4><span>Dev</span>Tech</h4>
@@ -41,6 +41,9 @@ export const Footer = () => {
             </div> 
             </div>
         </div>
+    </div>
+    <div className="Last-Footer">
+      <p>Design By BEB</p>
     </div>
       {/* */}
     </>

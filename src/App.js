@@ -8,11 +8,11 @@ import {
 } from "react-router-dom";
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-import { Login } from './components/Login';
 import { Home } from './components/Home';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
+import { Cards } from './components/Cards';
+import { Card } from './components/Card';
 
 function App() {
    const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
@@ -21,17 +21,17 @@ function App() {
     <BrowserRouter>
     <div className="App">
        <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">DevTech</Navbar.Brand>
+        <Container className='Container-nav'>
+          <Navbar.Brand className='dev'href="#home"><span>Dev</span>Tech</Navbar.Brand>
           <Nav className="justify-content-end">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             
-            {/*<Nav.Link as={Link} to="/login">Login</Nav.Link>*/}
+           
 
-            {isAuthenticated && <Nav.Link as={Link} to="/projects">Projects</Nav.Link> }
-
+            {isAuthenticated && <Nav.Link as={Link} to="/card">Projects</Nav.Link> }
+            
             {isAuthenticated && <button class="btn btn-dark" onClick={() => logout({ returnTo: window.location.origin})}>Logout</button> }
             {!isAuthenticated && <button class="btn btn-dark" onClick={() => loginWithRedirect()}>Login</button>}
             
@@ -43,12 +43,13 @@ function App() {
         <Routes>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          {/*<Route path="/login" element={<Login/>}/>*/}
           <Route path="/" element={<Home/>}/>
-          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/cards" element={<Cards/>}/>
         </Routes>
       </div>
     </div>
+      
+    
       <Footer />
     </BrowserRouter>
     
