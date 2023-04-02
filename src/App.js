@@ -1,18 +1,19 @@
-import './App.css';
-import {Navbar, Nav, Container} from 'react-bootstrap';
+import './App.css'
+import {Navbar, Nav, Container} from 'react-bootstrap'
 import {
   BrowserRouter,
   Routes,
   Route,
   Link
-} from "react-router-dom";
-import { About } from './components/About';
-import { Contact } from './components/Contact';
-import { Home } from './components/Home';
-import { useAuth0 } from '@auth0/auth0-react';
-import { Footer } from './components/Footer';
-import { Cards } from './components/Cards';
-import { Card } from './components/Card';
+} from "react-router-dom"
+import { About } from './components/About'
+import { Contact } from './components/Contact'
+import { Home } from './components/Home'
+import { useAuth0 } from '@auth0/auth0-react'
+import { Footer } from './components/Footer'
+import { Cards } from './components/Cards'
+
+
 
 function App() {
    const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
@@ -30,11 +31,10 @@ function App() {
             
            
 
-            {isAuthenticated && <Nav.Link as={Link} to="/card">Projects</Nav.Link> }
-            
+            {isAuthenticated && <Nav.Link as={Link} to="/cards">Projects</Nav.Link> }
+
             {isAuthenticated && <button class="btn btn-dark" onClick={() => logout({ returnTo: window.location.origin})}>Logout</button> }
-            {!isAuthenticated && <button class="btn btn-dark" onClick={() => loginWithRedirect()}>Login</button>}
-            
+            {!isAuthenticated && <button class="btn btn-dark" onClick={() => loginWithRedirect()}>Login</button>} 
           </Nav>
         </Container>
       </Navbar>
@@ -48,8 +48,6 @@ function App() {
         </Routes>
       </div>
     </div>
-      
-    
       <Footer />
     </BrowserRouter>
     
