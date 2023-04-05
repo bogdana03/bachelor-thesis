@@ -1,15 +1,18 @@
 import React from 'react'
-import image1 from '../assets/fullst.png'
 
 
-export const Card = () => {
+
+export const Card = ({title, imageSource}) => {
     return (
-    <div className="card">
-      <img src={image1} alt=""/>
+    <div className="card text-center"> 
+      <img src={imageSource} alt=""/>
       <div className="card-body">
-        <h4 className="card-title">My Title</h4>
-        <p className="card-text">loee j jkjhkhjn,nklm. öaanebssjnmnx 
+        <h4 className="card-title">{title}</h4>
+        <p className="card-text text-secondary">loee j jkjhkhjn,nklm. öaanebssjnmnx 
           bxm bsdjkhdmnclkedl nkadshieukbsb</p>
+          <a href="#!" className='btn btn-outline-secondary ronded-0'>
+            See Our Projects
+          </a>
       </div>
     </div>
    ) 
