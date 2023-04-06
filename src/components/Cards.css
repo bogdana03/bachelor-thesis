@@ -1,10 +1,16 @@
-.cards-style{
-    height: 80vh;
+.cards-image {
+    margin-top: 10vh;
 }
 
-.cards-image {
-    height: 20vh;
-    
-    
-    margin-top: 10vh;
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(3, 103, 103, 0.982)!important;
+    transition: all 0,7s linear;
+}
+
+.card-body {
+    padding: 2rem 0 !important;
+}
+
+.card-text {
+    padding: 0.3rem 1 rem;
 }

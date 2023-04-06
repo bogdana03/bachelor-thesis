@@ -14,6 +14,7 @@ import { Footer } from './components/Footer'
 import { Cards } from './components/Cards'
 
 
+
 function App() {
    const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
   
