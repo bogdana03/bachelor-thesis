@@ -6,8 +6,12 @@ import './cards.css'
 
 export const Card = ({title, imageSource, text, url}) => {
     return (
-    <div className="card text-center"> 
-      <img src={imageSource} alt=""/>
+    <div className="card text-center animate__animated animate__fadeInUp"> 
+
+      <div className='overflow'>
+        <img src={imageSource} alt="" className='card-img-top'/>
+      </div>
+
       <div className="card-body">
         <h4 className="card-title">{title}</h4>
         <p className="card-text text-secondary">

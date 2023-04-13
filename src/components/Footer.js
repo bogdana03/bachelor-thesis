@@ -9,7 +9,7 @@ export const Footer = () => {
             <div className="row">
              <div className="col-md-5 ft-1">
                 <h4><span>Dev</span>Tech</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor.</p>
                 <div className="footer-icons">
                   <i class="fa-brands fa-facebook"></i> 
                   <i class="fa-brands fa-instagram"></i> 

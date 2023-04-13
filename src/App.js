@@ -25,16 +25,16 @@ function App() {
         <Container className='Container-nav'>
           <Navbar.Brand className='dev'href="#home"><span>Dev</span>Tech</Navbar.Brand>
           <Nav className="justify-content-end">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/">SERVICES</Nav.Link>
+            <Nav.Link as={Link} to="/about">SPECIALISTS</Nav.Link>
+            <Nav.Link as={Link} to="/contact">ABOUT</Nav.Link>
             
            
 
-            {isAuthenticated && <Nav.Link as={Link} to="/cards">Projects</Nav.Link> }
+            {isAuthenticated && <Nav.Link as={Link} to="/cards">PROJECTS</Nav.Link> }
 
             {isAuthenticated && <button class="btn btn-dark" onClick={() => logout({ returnTo: window.location.origin})}>Logout</button> }
-            {!isAuthenticated && <button class="btn btn-dark" onClick={() => loginWithRedirect()}>Login</button>} 
+            {!isAuthenticated && <button class="btn btn-dark" onClick={() => loginWithRedirect()}>LOGIN</button>} 
           </Nav>
         </Container>
       </Navbar>
